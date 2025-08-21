@@ -52,7 +52,7 @@ function App() {
          form.append("audio", file);
 
          const resp = await fetch(
-            "http://ec2-16-171-174-141.eu-north-1.compute.amazonaws.com/transcribe",
+            "https://api.soundscript.me/transcribe",
             {
                method: "POST",
                body: form,
@@ -186,7 +186,7 @@ function App() {
 
       try {
          const response = await fetch(
-            "http://ec2-16-171-174-141.eu-north-1.compute.amazonaws.com/transcribe",
+            "https://api.soundscript.me/summarize",
             {
                method: "POST",
                body: formData,
