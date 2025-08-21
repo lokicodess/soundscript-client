@@ -186,7 +186,7 @@ function App() {
 
       try {
          const response = await fetch(
-            "https://api.soundscript.me/summarize",
+            "https://api.soundscript.me/transcribe",
             {
                method: "POST",
                body: formData,
@@ -221,7 +221,7 @@ function App() {
       setSummary(""); // Clear summary when starting new process
       try {
          const response = await fetch(
-            "http://ec2-16-171-174-141.eu-north-1.compute.amazonaws.com/summarize",
+            "https://api.soundscript.me/summarize",
             {
                method: "POST",
                headers: {
